@@ -82,9 +82,30 @@ body {
   margin-left: 50px;
 }
 .connection-items {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
   padding-bottom: 32px;
   padding-top: 32px;
 }
+.superscription:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.superscription-header:hover {
+  fill: var(--accent-color);
+}
+.superscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-text-color);
+}
+.superscription-header {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -305,16 +326,23 @@ li {
 .social-networks.team {
   display: flex;
   margin-bottom: 25px;
+  margin-right: 32px;
+  margin-left: 32px;
+  padding: 0;
 }
-/* .counting-networks:not(:last-child) {
+.counting-networks:not(:last-child) {
   margin-right: 10px;
-} */
+}
+
 .team .anchor {
-  width: 44px;
-  height: 44px;
-  /* background-color: green; */
-  fill: var(--primary-text-color);
-  border-radius: 50%;
+  /* width: 44px;
+  height: 44px; */
+  /* fill: var(--primary-text-color);
+  border-radius: 50%; */
+}
+.team .anchor:hover {
+  /* background-color: var(--secondary-bg-color);
+  fill: var(--additional-text-color); */
 }
 
 .role {
@@ -407,9 +435,37 @@ li {
   color: var(--additional-text-color);
   background-color: var(--secondary-bg-color);
 }
-/* .button.link:hover {
+.button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-text-color);
+  border-radius: 50%;
+}
+.button-link.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--additional-text-color);
+  border-radius: 50%;
+}
+.button-link.footer:hover {
+  width: 44px;
+  height: 44px;
   background-color: var(--secondary-bg-color);
-} */
+}
+
+.button-link:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-bg-color);
+  fill: var(--additional-text-color);
+}
+
 /*main container page 2*/
 .projects-nav {
   display: flex;
@@ -506,6 +562,8 @@ li {
   color: rgba(255, 255, 255, 0.6);
 }
 .social-networks {
+  display: flex;
+  padding: 0;
   margin-top: 0;
 }
 
