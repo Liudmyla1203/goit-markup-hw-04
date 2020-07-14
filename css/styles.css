@@ -181,7 +181,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .container.distance {
   margin-bottom: 94px;
@@ -359,6 +359,9 @@ li {
 /* .trhumb-clients:hover {
   fill: var(--accent-color);
 } */
+.trhumb-clients:hover .clients-icons {
+  border: 1px solid var(--accent-color);
+}
 .clients-icons:hover,
 .clients-icons:focus {
   color: var(--accent-color);
